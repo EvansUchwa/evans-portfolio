@@ -107,6 +107,9 @@ button:hover svg rect
 {
 	stroke-dashoffset: 0;
 }
+img{
+	object-fit: cover;
+}
 #btn{
 	display: none;
 }
