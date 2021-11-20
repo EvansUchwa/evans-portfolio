@@ -38,7 +38,7 @@
 		<section class="pageHeader">
 			<div class="logo">
 				<a href="">
-					<img src="assets/img/cover.png">
+					Evans Dsv
 				</a>
 			</div>
 
@@ -225,8 +225,8 @@
 					</div>
 					
 					<section class="slideNav">
-						<button><i class="mdi mdi-arrow-left" onclick="changeImage('prev')"></i></button>
-						<button><i class="mdi mdi-arrow-right" onclick="changeImage('next')"></i></button>
+						<button onclick="changeImage('prev')"><i class="mdi mdi-arrow-left"></i></button>
+						<button onclick="changeImage('next')"><i class="mdi mdi-arrow-right"></i></button>
 
 					</section>
 				</div>
@@ -238,27 +238,31 @@
 					<p>johnson@gmail.com</p>
 					<p>+229 94677352</p>
 					<!-- <button>Facebook</button> -->
-					<button>Github</button>
+					<button>
+						<a href="https://github.com/EvansUchwa">Github</a>
+					</button>
 					<button>
 						<a href="mailto:johnsonevans686@gmail.com">Me contactez</a>
 					</button>
-					<button><a href="assets/cv.pdf">Telechargez mon cv</a></button>
+					<button>
+						<a href="assets/cv.pdf">Telechargez mon cv</a>
+					</button>
 				</div>
 			</div>
-			<aside>
-				<hr>
-				<section>
-					<label class="asideNavActive navBtn" item="1" el-type="btn">
-					Accueil</label>
-					<label class="navBtn" item="2" el-type="btn">A propos</label>
-					<label class="navBtn" item="3" el-type="btn">Compétences</label>
-					<label class="navBtn" item="4" el-type="btn">Travaux</label>
-					<label class="navBtn" item="5" el-type="btn">Contact</label>
-				</section>
-			</aside>
 		</section>
 	</div>
 </div>
+
+<aside>
+	<hr>
+	<section>
+		<label class="asideNavActive navBtn" item="1" el-type="btn">1</label>
+		<label class="navBtn" item="2" el-type="btn">2</label>
+		<label class="navBtn" item="3" el-type="btn">3</label>
+		<label class="navBtn" item="4" el-type="btn">4</label>
+		<label class="navBtn" item="5" el-type="btn">5</label>
+	</section>
+</aside>
 
 
 <script type="text/javascript">
@@ -311,14 +315,33 @@
 <script type="text/javascript">
 	var i = 0;
 	var imgs = [
-	{src: 's1.png',text: '<p>ToDoApp</p><span>ReactJs-Bootstrap-JSON</span><p>Mon premier projet en reactJS</p>'},
-	{src: 's2.png',text: '<p>Anim Store</p><span>ReactJs-ApiContext-MaterialUi-JSON</span><p>Un mini e-commerce que j\'ai  fait pour parachever ma formation en react Js</p>'},
-	{src: 's3.png',text: '<p>WESH</p><span>VueJs-MaterialUi</span><p>Mon premier projet vue Js(version Desktop et tablette uniquement)</p>'},
-	{src: 's4.png',text: '<p>Noah Store</p><span>VueJs-Vue-x-PHP-MySql</span><p>Mon premier projet vue Js(version Desktop et tablette uniquement)</p>'},
-	{src: 's5.png',text: '<p>Odja</p><span>PHP-CSS3-MySql-MVC-Jquery</span><p>Un  site d\'annonce que j\'ai fait avec des collaborateur</p>'},
-	{src: 's6.png',text: '<p>LaraBlog</p><span>Laravel-Faker</span><p>Un petit blog en laravel pour parachever ma formation en laravel</p>'},
+	{src: 's1.png',text: '<p>ToDoApp</p><span>ReactJs-Bootstrap-JSON</span>'+
+	'<p>Mon premier projet en reactJS</p>'+
+	'<a href="https://evans-todoapp-reacft.netlify.app">Cliquez pour voir</a>'},
+
+	{src: 's2.png',text: '<p>Anim Store</p><span>ReactJs-ApiContext-MaterialUi-JSON</span>'+
+	'<p>Un mini e-commerce que j\'ai  fait pour parachever ma formation en react Js</p>'+
+	'<a href="https://evans-todoapp-reacft.netlify.app">Cliquez pour voir</a>'},
+
+	{src: 's3.png',text: '<p>WESH</p><span>VueJs-MaterialUi</span>'+
+	'<p>Mon premier projet vue Js(version Desktop et tablette uniquement)</p>'+
+	'<a href="https://wesh-vue.netlify.app">Cliquez pour voir</a>'},
+
+	{src: 's4.png',text: '<p>Noah Store</p><span>VueJs-Vue-x-PHP-MySql</span>'+
+	'<p>Mon premier projet vue Js(version Desktop et tablette uniquement)</p>'+
+	'<a href="https://noah-ecommerce-vueJs.netlify.app">Cliquez pour voir</a>'},
+
+	{src: 's5.png',text: '<p>Odja</p><span>PHP-CSS3-MySql-MVC-Jquery</span>'+
+	'<p>Un  site d\'annonce que fait avec des collaborateur</p>'+
+	'<a href="http://ahime.rf.gd">Cliquez pour voir</a>'},
+
+	{src: 's6.png',text: '<p>LaraBlog</p><span>Laravel-Faker</span>'+
+	'<p>Un petit blog en laravel pour parachever ma formation en laravel</p>'+
+	'<a href="#">Cliquez pour voir</a>'},
 	  ];
 	var interval = 1000;
+
+
 
 	var imgNb = imgs.length - 1;
 

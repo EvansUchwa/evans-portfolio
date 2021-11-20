@@ -125,7 +125,7 @@ img{
 	height: 100%;
 	z-index: 100;
 	width: 100%;
-	background-color: var(--secondBgColor);
+	background-color: rgba(0,0,0,0.5);
 	background-image: url('../img/t2.png');
 	display: flex;
 	flex-direction: column;
@@ -140,6 +140,10 @@ img{
 	margin-bottom: 20px;
 	font-size: 5vh;
 	letter-spacing: 2px;
+}
+.containerHided a:hover
+{
+	color:  var(--secondBgColor);
 }
 .containerVisible
 {
@@ -266,6 +270,9 @@ div.phHambuger:hover
 	margin: auto;
 	display: flex;
 	align-items: center;
+	color:  var(--secondBgColor) !important;
+	font-weight:  bold;
+	text-transform:  uppercase;
 }
 /* .logo i
 {
@@ -388,7 +395,7 @@ div.phHambuger:hover
 .progressBar
 {
 	width: 100%;
-	background-color: #666666;
+	background-color: rgba(0,0,0,0.5);
 	height:  25px;
 	position: relative;
 }
@@ -461,14 +468,14 @@ div.skillList h3
 .sl-tools,.sl-webLanguage,.sl-webFrameworkAndLibrary,.sl-other
 {
 	width: 45%;
-	background-color: var(--pbcD1);
+	background-color: rgba(0,0,0,0.2) ;
 	padding: 20px 10px;
 	margin-bottom: 20px;
 	border-bottom: solid 5px var(--secondBgColor);
 }
 .sl-tools section,.sl-other section
 {
-	background-color: #262626;
+	background-color: rgba(0,0,0,0.4);
 	padding: 10px 15px;
 	margin-bottom: 10px;
 }
@@ -480,14 +487,7 @@ div.skillList h3
 {
 	margin: 0 0 5px 0;
 }
-/* .sl-webLanguage
-{
-	width: 40%;
-}
-.sl-webLibrary
-{
-	width: 40%;
-} */
+
 /* Fin compétence */
 
 
@@ -496,6 +496,7 @@ div.skillList h3
 {
 	/* background-color: pink; */
 }
+
 #pcWork
 {
 	margin: 0 auto;
@@ -514,6 +515,10 @@ div.skillList h3
 {
 	width: 100%;
 	text-align: center;
+}
+#pcWork a
+{
+	color:  var(--secondBgColor);
 }
 .slideNav
 {
@@ -615,30 +620,33 @@ div.skillList h3
 
 /*  */
 
-.pageContent aside
+aside
 {
-	position: absolute;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
-	height: 90%;
+	height: 90vh;
+/* 	top:  5px;
+	bottom:  5px; */
 	top: 50%;
 	transform: translateY(-50%);
-	width: 10%;
-	right: 0%;
+	right:  10px;
+	/* width: 10px; */
+	z-index:  99999999999999999999999;
 }
-.pageContent aside hr
+aside hr
 {
 	margin: 0 15px 0 0;
 	border-color: var(--secondBgColor);
 }
-.pageContent aside section
+aside section
 {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	margin: 0;
 }
-.pageContent aside section label
+aside section label
 {
 	color: #999;
 }
